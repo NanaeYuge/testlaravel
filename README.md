@@ -47,8 +47,7 @@ php artisan db:seed
 
 ## 🗺 ER図
 
-![ER図](https://github.com/user-attachments/assets/b952e9dd-5beb-4d4f-a6f2-b0b3246b4ef3
-)
+![ER図](https://github.com/user-attachments/assets/b952e9dd-5beb-4d4f-a6f2-b0b3246b4ef3)
 
 ---
 
