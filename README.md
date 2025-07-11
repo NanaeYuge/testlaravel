@@ -29,35 +29,21 @@ Laravelを用いたお問い合わせ管理アプリケーションです。管�
 
 ## 環境構築手順
 
+## 🔧 環境構築
+
+以下の手順で環境構築を行います。
+
+### 1. Dockerコンテナのビルド・起動
+
 ```bash
-# 1. Dockerイメージのビルド
-$ ./vendor/bin/sail up -d --build
-
-# 2. コンテナ内へ入る
-$ ./vendor/bin/sail shell
-
-# 3. 依存パッケージのインストール
-$ composer install
-
-# 4. .envファイルの作成とAPP_KEY生成
-$ cp .env.example .env
-$ php artisan key:generate
-
-# 5. マイグレーション・シーディングの実行
-$ php artisan migrate --seed
-
-# 6. ログイン用ユーザーの登録（必要であれば）
-$ php artisan tinker
->>> \App\Models\User::factory()->create()
-
-## 🛠 使用技術（実行環境）
-
-- Laravel 8.x（PHPフレームワーク）
-- PHP 8.x
-- MySQL 5.7
-- Docker
-
----
+docker compose build
+docker compose up -d
+docker compose exec app bash
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan db:seed
 
 ## 🗺 ER図
 
