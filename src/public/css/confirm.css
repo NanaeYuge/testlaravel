@@ -1,0 +1,81 @@
+.header {
+    background-color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #baab9c;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #baab9c;
+    display: inline-block;
+    margin: 0 auto;
+}
+.confirm-container {
+    text-align: center;
+}
+
+.confirm-title {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #baab9c;
+    margin-bottom: 30px;
+    padding-left: 5px;
+}
+
+.confirm-table {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    border-collapse: collapse;
+}
+
+.confirm-table th {
+    width: 200px;
+    background-color: #baab9c;
+    color: white;
+    padding: 20px 20px;
+    text-align: left;
+    border-right: 2px solid white;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 1px solid white;
+    font-size: 13px;
+}
+
+.confirm-table td {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    text-align: left;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 13px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.submit-btn {
+    background-color: #837569;
+    color: white;
+    padding: 8px 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #837569;
+    color: #837569;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-top: 6px;
+}
